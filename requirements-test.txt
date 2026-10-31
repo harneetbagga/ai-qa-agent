@@ -1,0 +1,5 @@
+# Only what's needed to RUN the tests (used by CI). No AI libraries, no API key.
+# pytest-bdd 9.0 breaks on pytest 9.2+, so stay on pytest 8 until pytest-bdd catches up
+pytest>=8,<9
+pytest-bdd
+pytest-playwright

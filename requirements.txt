@@ -7,3 +7,4 @@ pydantic
 pytest>=8,<9
 pytest-bdd
 pytest-playwright
+streamlit

@@ -70,6 +70,10 @@ def main(story_file: str) -> None:
     print(f"Remaining failures: {len(failures)}")
     for f in failures:
         print(" -", f["test"])
+    branch = result.get("branch")
+    if branch:
+        print(f"\nChanges are committed on branch {branch} (main is untouched).")
+        print(f"Review with: git log main..{branch}   then: git push -u origin {branch}")
 
 
 if __name__ == "__main__":
