@@ -1,0 +1,9 @@
+langgraph
+langchain
+langchain-anthropic
+python-dotenv
+pydantic
+# pytest-bdd 9.0 breaks on pytest 9.2+, so stay on pytest 8 until pytest-bdd catches up
+pytest>=8,<9
+pytest-bdd
+pytest-playwright
